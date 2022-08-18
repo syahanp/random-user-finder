@@ -51,31 +51,30 @@ For more than 3 years as a React developer, i always hate it when it comes to ta
 
 Inspired by React Table, I tried to create a table that is not only flexible but also readable, and of course with the spirit of headless UI. I made my own logic, as well as my own table style. The simple logic that I created in the `useTableRenderer` hooks allows me to create flexible tables according to the needs of this project.
    
-
-	const columns: ColumnDefs[] = [
-		{
-		    accessor: "username",
-		    label: "Username",
-		    sortable: false,
-		    cellRenderer: data => data.login.username,
+    const columns: ColumnDefs[] = [
+	    {
+		accessor: "username",
+		label: "Username",
+		sortable: false,
+		cellRenderer: data => data.login.username,
 	    },
 	    {
-		    accessor: "name",
-		    label: "Name",
-		    cellRenderer: data => `${data.name.first}  ${data.name.last}`,
+	    	accessor: "name",
+		label: "Name",
+		cellRenderer: data => `${data.name.first}  ${data.name.last}`,
 	    },
 	    {
-		    accessor: "email",
-		    label: "Email",
+	    	accessor: "email",
+		label: "Email",
 	    },
 	    {
-		    accessor: "gender",
-		    label: "Gender",
+	    	accessor: "gender",
+		label: "Gender",
 	    },
-		{
-		    accessor: "date",
-		    label: "Registered Date",
-		    cellRenderer: data => formatDate(data.registered.date),
+	    {
+	    	accessor: "date",
+		label: "Registered Date",
+		cellRenderer: data => formatDate(data.registered.date),
 	    },
     ]
 
