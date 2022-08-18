@@ -83,7 +83,7 @@ notice the column definition above, how `cellRenderer` can make each cell can be
 
 
 ### State Management
-By using React Query as cache storage for server state data, this application no longer need global state management. The state in this application is purely just storing the state of a UI. Hence, the name is **state**: used to store the state of the UI, not the data. Usually, the common way of doing it is using React Context or Redux. 
+By using React Query as cache storage for server state data, this application no longer need global state management. The state in this application is purely just storing the state of a UI. Hence, the name is **state**: used to store the state of the UI, not the data. Usually, the common way to implement global state management is using React Context or Redux. 
 
 ## How I Optimize the App
 
