@@ -73,7 +73,7 @@ const Home = () => {
         sortBy={filter.sortBy}
       />
 
-      <Pagination page={filter.page} onChangePage={handlePagination} />
+      {!isLoading && <Pagination page={filter.page} onChangePage={handlePagination} />}
     </div>
   )
 }

@@ -189,9 +189,9 @@ describe("testing Home Page", () => {
   })
 
   it("should go to page 2", async () => {
-    const { getByText } = render(<HomeRenderer />)
+    const { findByText } = render(<HomeRenderer />)
 
-    const page2 = getByText("2")
+    const page2 = await findByText("2")
 
     act(() => {
       fireEvent.click(page2)

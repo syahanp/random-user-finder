@@ -13,6 +13,7 @@ A really fast app to search random user with advance table functionalities.
 ## Setup
 
 ### Installation
+Please use latest node version, at least version 16 or above
 Clone this repository to your desktop and run `yarn install` to install all the dependencies.
 
 Then you can run the development server:
