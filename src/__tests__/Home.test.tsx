@@ -6,6 +6,9 @@ import Home from "pages"
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query"
 import { act } from "react-dom/test-utils"
 
+/**
+ * Setup mock server to test API call
+ */
 const server = setupServer(
   rest.get("https://randomuser.me/api/", (req, res, ctx) => {
     const keyword = req.url.searchParams.get("keyword")
@@ -136,7 +139,7 @@ describe("testing Home Page", () => {
     expect(screen.getByText("Jane Peterson")).toBeInTheDocument()
   })
 
-  it("should fetch user 'Bob Sadino' when user search with 'bob'", async () => {
+  it("should response user 'Bob Sadino' when user search with 'bob'", async () => {
     const { getByLabelText } = render(<HomeRenderer />)
 
     const searchbar = getByLabelText("searchbar")
@@ -150,7 +153,7 @@ describe("testing Home Page", () => {
     expect(screen.getByText("Bob Sadino")).toBeInTheDocument()
   })
 
-  it("should fetch user with male gender filter", async () => {
+  it("should response user with male gender filter", async () => {
     const { getByLabelText } = render(<HomeRenderer />)
 
     const genderSelect = getByLabelText("select-gender")

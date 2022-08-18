@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react"
-import { SearchIcon } from "@heroicons/react/outline"
-import useDebounceValue from "hooks/useDebounceValue"
+import React from "react"
 
 interface Props {
   value: string

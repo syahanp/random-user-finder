@@ -75,6 +75,8 @@ const Table: React.FC<Props> = ({
 
   return (
     <div className="w-full h-full relative">
+      
+      {/* render overlay when loading data to API */}
       {isLoading && (
         <div className="absolute w-full h-full bg-white/40 transition-all" />
       )}
