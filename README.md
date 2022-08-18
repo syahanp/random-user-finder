@@ -2,6 +2,8 @@
 
 A really fast app to search random user with advance table functionalities.
 
+https://vercel.com/syahanp/random-user-finder
+
 ## Table of contents
 - [Setup](#setup)
 - [Features](#features)
